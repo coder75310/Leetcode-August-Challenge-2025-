@@ -5,7 +5,7 @@ In Pascal's triangle, each number is the sum of the two numbers directly above i
 
 
 class Solution {
-public:
+public:     
     vector<vector<int>> generate(int numRows) {
         vector<vector<int>> result(numRows);
 
