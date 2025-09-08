@@ -86,7 +86,6 @@ class Solution {
                 int left = lower_bound(begin(positions), end(positions), i) - begin(positions);
                 int right = upper_bound(begin(positions), end(positions), j) - begin(positions) - 1;
 
-
                 if(left <= right){
                     int total = prefixSum[right] - (left > 0 ? prefixSum[left-1] : 0);
                     maxFruits = max(maxFruits, total);
