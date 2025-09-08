@@ -9,6 +9,7 @@ you harvest all the fruits at that position, and the fruits will disappear from 
 Return the maximum total number of fruits you can harvest. */
 
 
+// Method 1
 /* class Solution {
 public:
     int maxTotalFruits(vector<vector<int>>& fruits, int startPos, int k) {
