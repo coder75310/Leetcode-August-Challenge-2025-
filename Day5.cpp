@@ -20,7 +20,7 @@ public:
         for (int i = 0; i < n; ++i) {
             bool placed = false;
             for (int j = 0; j < n; ++j) {
-                if (!used[j] && baskets[j] >= fruits[i]) {
+                if (!used[j] && baskets[j] >= fruits[i]){
                     used[j] = true;
                     placed = true;
                     break;
