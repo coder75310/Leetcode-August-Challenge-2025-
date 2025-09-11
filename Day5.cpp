@@ -8,3 +8,27 @@ Each fruit type must be placed in the leftmost available basket with a capacity 
 Each basket can hold only one type of fruit.
 If a fruit type cannot be placed in any basket, it remains unplaced.
 Return the number of fruit types that remain unplaced after all possible allocations are made. */
+
+
+class Solution {
+public:
+    int numOfUnplacedFruits(vector<int>& fruits, vector<int>& baskets) {
+        int n = fruits.size();
+        vector<bool> used(n, false); // Track if a basket is already used
+        int unplaced = 0;
+
+        for (int i = 0; i < n; ++i) {
+            bool placed = false;
+            for (int j = 0; j < n; ++j) {
+                if (!used[j] && baskets[j] >= fruits[i]) {
+                    used[j] = true;
+                    placed = true;
+                    break;
+                }
+            }
+            if (!placed) unplaced++;
+        }
+
+        return unplaced;
+    }
+};
