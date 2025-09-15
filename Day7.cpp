@@ -10,7 +10,7 @@ The children will make exactly n - 1 moves according to the following rules to r
 The child starting from (0, 0) must move from their current room (i, j) to one of the rooms (i + 1, j + 1), (i + 1, j), and (i, j + 1) if the target room exists.
 The child starting from (0, n - 1) must move from their current room (i, j) to one of the rooms (i + 1, j - 1), (i + 1, j), and (i + 1, j + 1) if the target room exists.
 The child starting from (n - 1, 0) must move from their current room (i, j) to one of the rooms (i - 1, j + 1), (i, j + 1), and (i + 1, j + 1) if the target room exists.
-When a child enters a room, they will collect all the fruits there. If two or more children enter the same room, only one child will collect the fruits, and the room will be
-emptied after they leave.
+When a child enters a room, they will collect all the fruits there. If two or more children enter the same room, only one child will collect the fruits,
+and the room will be emptied after they leave.
 
 Return the maximum number of fruits the children can collect from the dungeon. */
