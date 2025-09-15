@@ -1,4 +1,4 @@
-3363. Find the Maximum Number of Fruits Collected:
+/* 3363. Find the Maximum Number of Fruits Collected:
 
 There is a game dungeon comprised of n x n rooms arranged in a grid.
 
@@ -13,4 +13,4 @@ The child starting from (n - 1, 0) must move from their current room (i, j) to o
 When a child enters a room, they will collect all the fruits there. If two or more children enter the same room, only one child will collect the fruits, and the room will be
 emptied after they leave.
 
-Return the maximum number of fruits the children can collect from the dungeon.
+Return the maximum number of fruits the children can collect from the dungeon. */
